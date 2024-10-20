@@ -1,7 +1,11 @@
 spring:
   application:
     name: NewsData
-
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url:
 
 
 open-ai:
