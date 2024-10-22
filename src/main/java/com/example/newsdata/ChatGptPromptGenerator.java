@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class gptService {
+public class ChatGptPromptGenerator {
     private final String DEFAULT_MODEL = "gpt-4o";
     private final double DEFAULT_TEMPERATURE = 0.1;
 
