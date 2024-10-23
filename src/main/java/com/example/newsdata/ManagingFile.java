@@ -26,13 +26,15 @@ public class ManagingFile {
 
     //final_article 읽기
     public List<String> readCsvFile() throws IOException {
-        Resource resource = resourceLoader.getResource("src/main/resources/final_article.csv");
+        Resource resource = resourceLoader.getResource("classpath:news.csv");
         List<String> contents = new ArrayList<>();
 
         try(BufferedReader br = new BufferedReader(new InputStreamReader(resource.getInputStream()))) {
             String line;
-            while ((line = br.readLine()) != null) {
+            int cnt = 0;
+            while ((line = br.readLine()) != null && cnt < 100) {
                 contents.add(line);
+                cnt ++;
             }
         }
         return contents;

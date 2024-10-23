@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 public class ChatGptPromptGenerator {
-    private final String DEFAULT_MODEL = "gpt-4o";
+    private final String DEFAULT_MODEL = "gpt-3.5-turbo";
     private final double DEFAULT_TEMPERATURE = 0.1;
 
     public ChatCompletionRequest generatePrompt(String content) {
